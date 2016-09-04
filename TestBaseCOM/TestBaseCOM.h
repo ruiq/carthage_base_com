@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import <TestBaseCOM/BaseCOM.h>
+
 //! Project version number for TestBaseCOM.
 FOUNDATION_EXPORT double TestBaseCOMVersionNumber;
 
