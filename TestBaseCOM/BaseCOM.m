@@ -12,7 +12,7 @@
 
 +(void)log:(NSString *)log
 {
-    NSLog(@"%@",log);
+    NSLog(@"(log in com)%@",log);
 }
 
 @end
