@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E03CE15F1D7B1D0000C62EEF /* TestBaseCOM.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CE15E1D7B1D0000C62EEF /* TestBaseCOM.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E03CE1681D7B1D1D00C62EEF /* BaseCOM.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CE1661D7B1D1D00C62EEF /* BaseCOM.h */; };
+		E03CE15F1D7B1D0000C62EEF /* TestBaseCOM.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CE15E1D7B1D0000C62EEF /* TestBaseCOM.h */; };
+		E03CE1681D7B1D1D00C62EEF /* BaseCOM.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CE1661D7B1D1D00C62EEF /* BaseCOM.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E03CE1691D7B1D1D00C62EEF /* BaseCOM.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CE1671D7B1D1D00C62EEF /* BaseCOM.m */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +65,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E03CE15F1D7B1D0000C62EEF /* TestBaseCOM.h in Headers */,
 				E03CE1681D7B1D1D00C62EEF /* BaseCOM.h in Headers */,
+				E03CE15F1D7B1D0000C62EEF /* TestBaseCOM.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +283,7 @@
 				E03CE1651D7B1D0000C62EEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
