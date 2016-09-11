@@ -7,12 +7,13 @@
 //
 
 #import "BaseCOM.h"
+#import <YYModel/YYModel.h>
 
 @implementation BaseCOM
 
 +(void)log:(NSString *)log
 {
-    NSLog(@"(log in com)%@",log);
+    NSLog(@"(log in com : %d)%@",(int)[log yy_modelHash],log);
 }
 
 @end
