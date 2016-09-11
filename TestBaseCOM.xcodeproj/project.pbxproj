@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E00AF8DB1D85ADB300D2C639 /* CacheKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E00AF8D91D85ADB300D2C639 /* CacheKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E00AF8DC1D85ADB300D2C639 /* FMDB.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E00AF8DA1D85ADB300D2C639 /* FMDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E03CE15F1D7B1D0000C62EEF /* TestBaseCOM.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CE15E1D7B1D0000C62EEF /* TestBaseCOM.h */; };
 		E03CE1681D7B1D1D00C62EEF /* BaseCOM.h in Headers */ = {isa = PBXBuildFile; fileRef = E03CE1661D7B1D1D00C62EEF /* BaseCOM.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E03CE1691D7B1D1D00C62EEF /* BaseCOM.m in Sources */ = {isa = PBXBuildFile; fileRef = E03CE1671D7B1D1D00C62EEF /* BaseCOM.m */; };
+		E04E42DF1D85ACC500967DF0 /* TestBaseCOM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03CE15B1D7B1D0000C62EEF /* TestBaseCOM.framework */; };
+		E04E42E11D85AD5B00967DF0 /* TestBaseCOM.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = E03CE15B1D7B1D0000C62EEF /* TestBaseCOM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E062E8541D85966E00627EB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E062E8531D85966E00627EB1 /* main.m */; };
 		E062E8571D85966E00627EB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E062E8561D85966E00627EB1 /* AppDelegate.m */; };
 		E062E85A1D85966E00627EB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E062E8591D85966E00627EB1 /* ViewController.m */; };
@@ -18,7 +22,34 @@
 		E062E8621D85966E00627EB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E062E8601D85966E00627EB1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E04E42DD1D85ACC300967DF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E03CE1521D7B1D0000C62EEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E03CE15A1D7B1D0000C62EEF;
+			remoteInfo = TestBaseCOM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E04E42E01D85AD5500967DF0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E04E42E11D85AD5B00967DF0 /* TestBaseCOM.framework in CopyFiles */,
+				E00AF8DB1D85ADB300D2C639 /* CacheKit.framework in CopyFiles */,
+				E00AF8DC1D85ADB300D2C639 /* FMDB.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		E00AF8D91D85ADB300D2C639 /* CacheKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CacheKit.framework; path = Carthage/Build/iOS/CacheKit.framework; sourceTree = "<group>"; };
+		E00AF8DA1D85ADB300D2C639 /* FMDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FMDB.framework; path = Carthage/Build/iOS/FMDB.framework; sourceTree = "<group>"; };
 		E03CE15B1D7B1D0000C62EEF /* TestBaseCOM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestBaseCOM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E03CE15E1D7B1D0000C62EEF /* TestBaseCOM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBaseCOM.h; sourceTree = "<group>"; };
 		E03CE1601D7B1D0000C62EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E04E42DF1D85ACC500967DF0 /* TestBaseCOM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +89,8 @@
 		E03CE1511D7B1D0000C62EEF = {
 			isa = PBXGroup;
 			children = (
+				E00AF8D91D85ADB300D2C639 /* CacheKit.framework */,
+				E00AF8DA1D85ADB300D2C639 /* FMDB.framework */,
 				E03CE15D1D7B1D0000C62EEF /* TestBaseCOM */,
 				E062E8511D85966E00627EB1 /* APP */,
 				E03CE15C1D7B1D0000C62EEF /* Products */,
@@ -147,10 +181,12 @@
 				E062E84C1D85966E00627EB1 /* Sources */,
 				E062E84D1D85966E00627EB1 /* Frameworks */,
 				E062E84E1D85966E00627EB1 /* Resources */,
+				E04E42E01D85AD5500967DF0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E04E42DE1D85ACC300967DF0 /* PBXTargetDependency */,
 			);
 			name = APP;
 			productName = APP;
@@ -234,6 +270,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E04E42DE1D85ACC300967DF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E03CE15A1D7B1D0000C62EEF /* TestBaseCOM */;
+			targetProxy = E04E42DD1D85ACC300967DF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		E062E85B1D85966E00627EB1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -296,9 +340,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -339,10 +384,11 @@
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -359,6 +405,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eascs.TestBaseCOM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -376,6 +423,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.eascs.TestBaseCOM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -432,6 +480,7 @@
 				E062E8651D85966E00627EB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

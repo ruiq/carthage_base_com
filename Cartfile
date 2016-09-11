@@ -1,2 +1,3 @@
-github "ibireme/YYModel"
+github "davbeck/CacheKit" ~> 0.6
+
 

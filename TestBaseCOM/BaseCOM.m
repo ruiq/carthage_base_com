@@ -7,13 +7,14 @@
 //
 
 #import "BaseCOM.h"
-#import <YYModel/YYModel.h>
+#import <CacheKit/CacheKit.h>
 
 @implementation BaseCOM
 
 +(void)log:(NSString *)log
 {
-    NSLog(@"(log in com : %d)%@",(int)[log yy_modelHash],log);
+    [[CKFileCache sharedCache] setObject:log forKey:@"TEST"];
+    NSLog(@"(log in com) :%@",log);
 }
 
 @end
