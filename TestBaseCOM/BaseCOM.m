@@ -14,7 +14,7 @@
 +(void)log:(NSString *)log
 {
     [[CKFileCache sharedCache] setObject:log forKey:@"TEST"];
-    NSLog(@"(log in com) :%@",log);
+    NSLog(@"222(log in com) :%@",log);
 }
 
 @end
